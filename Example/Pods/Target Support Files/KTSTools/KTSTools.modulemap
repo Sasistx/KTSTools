@@ -1,0 +1,6 @@
+framework module KTSTools {
+  umbrella header "KTSTools-umbrella.h"
+
+  export *
+  module * { export * }
+}

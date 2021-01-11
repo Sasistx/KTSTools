@@ -24,6 +24,7 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		BED8A4E93E00706FA0E51784 /* Pods_KTSTools_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBA7D8E8B0282DE1C5139365 /* Pods_KTSTools_Tests.framework */; };
+		F33F837E25ABF5B100EA46EE /* KTSTestFile.m in Sources */ = {isa = PBXBuildFile; fileRef = F33F837D25ABF5B100EA46EE /* KTSTestFile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,7 @@
 /* Begin PBXFileReference section */
 		15E314631A68C7C023A0E0AD /* Pods_KTSTools_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KTSTools_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2201C695A6FB3B633448186A /* Pods-KTSTools_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KTSTools_Tests.debug.xcconfig"; path = "Target Support Files/Pods-KTSTools_Tests/Pods-KTSTools_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4536C1ED957544BD13E33162 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4536C1ED957544BD13E33162 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* KTSTools_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KTSTools_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,8 +66,10 @@
 		95381285BE29288833EA6349 /* Pods-KTSTools_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KTSTools_Tests.release.xcconfig"; path = "Target Support Files/Pods-KTSTools_Tests/Pods-KTSTools_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B9C9510960635770E8ACB4E7 /* Pods-KTSTools_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KTSTools_Example.debug.xcconfig"; path = "Target Support Files/Pods-KTSTools_Example/Pods-KTSTools_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BBA7D8E8B0282DE1C5139365 /* Pods_KTSTools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KTSTools_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE0C1C6096F8345330CAB0B2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		F28A03B7E420B1DCC549E275 /* KTSTools.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = KTSTools.podspec; path = ../KTSTools.podspec; sourceTree = "<group>"; };
+		EE0C1C6096F8345330CAB0B2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F28A03B7E420B1DCC549E275 /* KTSTools.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KTSTools.podspec; path = ../KTSTools.podspec; sourceTree = "<group>"; };
+		F33F837C25ABF5B100EA46EE /* KTSTestFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTSTestFile.h; sourceTree = "<group>"; };
+		F33F837D25ABF5B100EA46EE /* KTSTestFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTSTestFile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +143,8 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				F33F837C25ABF5B100EA46EE /* KTSTestFile.h */,
+				F33F837D25ABF5B100EA46EE /* KTSTestFile.m */,
 			);
 			name = "Example for KTSTools";
 			path = KTSTools;
@@ -193,7 +198,6 @@
 				2201C695A6FB3B633448186A /* Pods-KTSTools_Tests.debug.xcconfig */,
 				95381285BE29288833EA6349 /* Pods-KTSTools_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +262,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -366,6 +371,7 @@
 			files = (
 				6003F59E195388D20070C39A /* KTSAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* KTSViewController.m in Sources */,
+				F33F837E25ABF5B100EA46EE /* KTSTestFile.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

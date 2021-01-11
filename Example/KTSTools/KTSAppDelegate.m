@@ -7,12 +7,22 @@
 //
 
 #import "KTSAppDelegate.h"
+#import <KTSTools/KTSExportManager.h>
+#import "KTSTestFile.h"
 
 @implementation KTSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [KTSExportManager sharedManager].exportClassSetBlock = ^NSSet<Class> * _Nullable{
+        NSArray *array = @[[KTSTestFile class], [KTSExportManager class]];
+        return [[NSSet alloc] initWithArray:array];
+    };
+    
+    [[KTSExportManager sharedManager] executeFuncsForKey:@"abc"];
+    [[KTSExportManager sharedManager] executeFuncsForKey:@"abcd"];
+    [[KTSExportManager sharedManager] executeFuncsForKey:@"abcde"];
     return YES;
 }
 

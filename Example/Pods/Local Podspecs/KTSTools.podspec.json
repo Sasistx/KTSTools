@@ -1,0 +1,22 @@
+{
+  "name": "KTSTools",
+  "version": "0.1.0",
+  "summary": "A short description of KTSTools.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/p_txianggao/KTSTools",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "p_txianggao": "gaotianxiang@yuewen.com"
+  },
+  "source": {
+    "git": "https://github.com/p_txianggao/KTSTools.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "KTSTools/Classes/**/*"
+}
